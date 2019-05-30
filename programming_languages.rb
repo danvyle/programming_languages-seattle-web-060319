@@ -1,9 +1,13 @@
 def reformat_languages(languages)
   # your code here
   new_hash = {}
+    languages.each do |language, kind|
+      kind.each do |style, style_type|
+    binding.pry 
+      end
+    end
   
-  
-  returne new_hash
+  return new_hash
 end
 
 # hash = {}
