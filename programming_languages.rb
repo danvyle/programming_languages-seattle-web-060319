@@ -1,19 +1,35 @@
 require 'pry'
 
 def reformat_languages(languages)
-  # your code here
-  new_hash = {}
-    languages.each do |language, kind|
-      kind.each do |style_key, style_value|
-        style_value.each do |k, v|
-          new_hash[style_key] = style_value
-          new_hash[:style] = [language]
-        end
+  new_hash = {} 
+   languages.each do |style, description|
+    description.each do |lang, type|
+      binding.pry
+      if new_hash.has_key?(lang)
+        new_hash[lang][:style] << style
+      else
+        new_hash[lang] = type
+        new_hash[lang][:style] = [style]
       end
     end
-  
-  return new_hash
+  end
+   new_hash  
 end
+
+# def reformat_languages(languages)
+#   # your code here
+#   new_hash = {}
+#     languages.each do |language, kind|
+#       kind.each do |style_key, style_value|
+#         style_value.each do |k, v|
+#           new_hash[style_key] = style_value
+#           new_hash[:style] = [language]
+#         end
+#       end
+#     end
+  
+#   return new_hash
+# end
 
 # {
 #   :ruby => {
