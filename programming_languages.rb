@@ -5,8 +5,9 @@ def reformat_languages(languages)
   new_hash = {}
     languages.each do |language, kind|
       kind.each do |style_key, style_value|
-        new_hash << style_key
-    binding.pry 
+        new_hash[style_key] = style_value
+        
+    # binding.pry 
       end
     end
   
