@@ -16,12 +16,6 @@ def reformat_languages(languages)
    new_hash  
 end
 
-# 
-
-# {
-#   :ruby => {
-#     :type => "interpreted",
-#     :style => [:oo]},
 
 
 # hash = {}
