@@ -14,5 +14,11 @@ def reformat_languages(languages)
   return new_hash
 end
 
+# {
+#   :ruby => {
+#     :type => "interpreted",
+#     :style => [:oo]},
+
+
 # hash = {}
 # hash[:my_key] = {second_level_key: "second level value"}
