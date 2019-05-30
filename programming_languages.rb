@@ -7,6 +7,4 @@ def reformat_languages(languages)
 end
 
 # hash = {}
-# hash[:my_key] = "my value"
- 
-# puts hash
+# hash[:my_key] = {second_level_key: "second level value"}
