@@ -6,3 +6,7 @@ def reformat_languages(languages)
   returne new_hash
 end
 
+# hash = {}
+# hash[:my_key] = "my value"
+ 
+# puts hash
